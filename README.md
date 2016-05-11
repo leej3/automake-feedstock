@@ -5,7 +5,7 @@ Home: http://www.gnu.org/software/automake/
 
 Package license: GPL 3
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Tool for automatically generating Makefile.in files compliant with the GNU Coding Standards.
 

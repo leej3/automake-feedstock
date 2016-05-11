@@ -7,6 +7,7 @@ package:
 source:
     fn: automake-{{ version }}.tar.gz
     url: http://ftp.gnu.org/gnu/automake/automake-{{ version }}.tar.gz
+    sha256: 7847424d4204d1627c129e9c15b81e145836afa2a1bf9003ffe10aa26ea75755
 
 build:
     number: 1
