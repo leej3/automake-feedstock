@@ -1,4 +1,4 @@
-{% set version = "1.14" %}
+{% set version = "1.15" %}
 
 package:
     name: automake
@@ -7,10 +7,10 @@ package:
 source:
     fn: automake-{{ version }}.tar.gz
     url: http://ftp.gnu.org/gnu/automake/automake-{{ version }}.tar.gz
-    sha256: 7847424d4204d1627c129e9c15b81e145836afa2a1bf9003ffe10aa26ea75755
+    sha256: 7946e945a96e28152ba5a6beb0625ca715c6e32ac55f2e353ef54def0c8ed924
 
 build:
-    number: 2
+    number: 0
     skip: True  # [win]
 
 requirements:
