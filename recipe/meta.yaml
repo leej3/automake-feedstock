@@ -7,7 +7,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: automake-{{ version }}.tar.gz
   url: http://ftp.gnu.org/gnu/automake/automake-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
@@ -31,7 +30,9 @@ test:
 
 about:
   home: http://www.gnu.org/software/automake/
-  license: GPL 3
+  license: GPL-2.0
+  license_family: GPL
+  license_file: COPYING
   summary: Tool for automatically generating Makefile.in files compliant with the GNU Coding Standards.
 
 extra:
