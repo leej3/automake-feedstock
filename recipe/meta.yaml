@@ -15,7 +15,7 @@ build:
   skip: true  # [win]
 
 requirements:
-  build:
+  host:
     - m4
     - autoconf
     - perl
