@@ -33,7 +33,9 @@ about:
   license: GPL-2.0
   license_family: GPL
   license_file: COPYING
-  summary: Tool for automatically generating Makefile.in files compliant with the GNU Coding Standards.
+  summary: >
+             Tool for automatically generating Makefile.in files compliant with
+             the GNU Coding Standards.
 
 extra:
   recipe-maintainers:
