@@ -5,13 +5,15 @@ About automake
 
 Home: http://www.gnu.org/software/automake/
 
-Package license: GPL-2.0
+Package license: GPL 3
 
 Feedstock license: BSD 3-Clause
 
 Summary: Tool for automatically generating Makefile.in files compliant with the GNU Coding Standards.
 
-
+Automake is a tool for automatically generating Makefile.ins from files
+called Makefile.am.  It assumes that the project uses Autoconf and enforces
+certain restrictions on the configure.ac contents.
 
 
 Current build status
@@ -112,5 +114,6 @@ Feedstock Maintainers
 =====================
 
 * [@jakirkham](https://github.com/jakirkham/)
+* [@mingwandroid](https://github.com/mingwandroid/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
