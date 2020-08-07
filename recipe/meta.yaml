@@ -32,7 +32,7 @@ test:
 
 about:
   home: http://www.gnu.org/software/automake/
-  license: GPL 3
+  license: GPL-3.0-or-later
   license_file: COPYING
   summary: Tool for automatically generating Makefile.in files compliant with the GNU Coding Standards.
   description: |
