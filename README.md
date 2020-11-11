@@ -5,9 +5,13 @@ Home: http://www.gnu.org/software/automake/
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/automake-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tool for automatically generating Makefile.in files compliant with the GNU Coding Standards.
+
+Development: https://git.savannah.gnu.org/git/automake.git
+
+Documentation: https://www.gnu.org/software/automake/manual/automake.html
 
 Automake is a tool for automatically generating Makefile.ins from files
 called Makefile.am.  It assumes that the project uses Autoconf and enforces
@@ -71,6 +75,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=71&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/automake-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=71&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/automake-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr>
