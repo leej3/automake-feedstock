@@ -12,10 +12,12 @@ source:
     - 0002-apple-silicon.patch
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
+  build:
+    - make
   host:
     - m4
     - autoconf
