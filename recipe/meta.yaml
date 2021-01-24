@@ -7,21 +7,26 @@ package:
 source:
   url: http://ftp.gnu.org/gnu/automake/automake-{{ version }}.tar.gz
   sha256: 608a97523f97db32f1f5d5615c98ca69326ced2054c9f82e65bade7fc4c9dea8
+  patches:
+     - 0001-apple-silicon.patch
+     - 0002-apple-silicon.patch
 
 build:
-  number: 1003
+  number: 1004
   skip: true  # [win]
 
 requirements:
+  build:
+    - make
   host:
     - m4
     - autoconf
-    - perl
+    - perl *
     - make
   run:
     - m4
     - autoconf
-    - perl
+    - perl *
 
 test:
   commands:
@@ -29,7 +34,7 @@ test:
 
 about:
   home: http://www.gnu.org/software/automake/
-  license: GPL 3
+  license: GPL-3.0-or-later
   license_file: COPYING
   summary: Tool for automatically generating Makefile.in files compliant with the GNU Coding Standards.
   description: |
