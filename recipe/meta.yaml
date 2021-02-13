@@ -12,21 +12,33 @@ source:
     - 0002-apple-silicon.patch
 
 build:
+{% if bootstrapping == 'yes' %}
+  # Please increment by two
+  number: 0
+  string: h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}_bootstrapping
+{% else %}
+  # Keep above the number of the _bootstrapping package
   number: 3
+{% endif %}
+  detect_binary_files_with_prefix: false
+  script_env:
+    - BOOTSTRAPPING={{ bootstrapping }}
   skip: true  # [win]
 
 requirements:
+{% if bootstrapping != 'yes' %}
   build:
     - make
   host:
     - m4
     - autoconf
-    - perl *
+    - perl
     - make
   run:
     - m4
     - autoconf
-    - perl *
+    - perl
+{% endif %}
 
 test:
   commands:
